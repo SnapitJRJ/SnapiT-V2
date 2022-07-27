@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html>
+  <head>
+  	<link href="style.css" rel="stylesheet" type="text/css" />
+  </head>
+  <body>
+    <div class="header">
+      <img src="logo.png" alt="Logo">
+    </div>
+   <div class="background"> 
+     
+     
+    <div class="nav">
+      <a href="index.html">Home</a>
+      <a href="category.html">Categorises</a>
+      <a href="feed.html">Portfolios/Feed</a>
+      <a href="services.html">Services</a>
+      <a href="vids.html">Guidance</a>
+    	<a href="support.html">Support</a>
+    </div>
+    <div class=" footer flex-container">
+      <img src="logo.png" alt="Logo">
+      <a href="support.html">Contact</a>
+      <a href="feed.html">Community</a>
+      <a href="support.html">Company</a> 
+      <p>© SnapiT Inc. 2022 Shots Worth Taking!</p>
+    </div>
+      <a href ="signup.html"class="btn">Register</a>
+      <a href="log in.html"class="btn">Log In</a>
+    <div class="mission">
+      <h2 style="text-align:center">Mission statement
+      </h2>
+      <h4 style="text-align:center">New photographers don't have an outlet to express themselves to their community; SnapiT strives to assist photographers that are new to the industry by granting access to a portfolio on our platform along with guidance to start and maintain their portfolio, snapiT endevors to help photographers recive recognition from there SnapiT Community through recommendations to consumers based on their interests.
+      </h4>
+    </div>
+    
+
+    <div class="row">
+    <div class="column">
+      <img src="IMG1.jpg" style="width:100%" onclick="openModal();currentSlide(1)" class="hover-shadow cursor">
+    </div>
+    <div class="column">
+      <img src="IMG2.jpg" style="width:100%" onclick="openModal();currentSlide(2)" class="hover-shadow cursor">
+    </div>
+    <div class="column">
+      <img src="IMG3.jpg" style="width:100%" onclick="openModal();currentSlide(3)" class="hover-shadow cursor">
+    </div>
+    <div class="column">
+      <img src="IMG4.jpg" style="width:100%" onclick="openModal();currentSlide(4)" class="hover-shadow cursor">
+    </div>
+    </div>
+
+    <div id="myModal" class="modal">
+      <span class="close cursor" onclick="closeModal()">&times;</span>
+    <div class="modal-content">
+
+    <div class="mySlides">
+    <div class="numbertext">1 / 4</div>
+      <img src="IMG1.jpg" style="width:100%">
+    </div>
+
+    <div class="mySlides">
+      <div class="numbertext">2 / 4</div>
+      <img src="IMG2.jpg" style="width:100%">
+    </div>
+
+    <div class="mySlides">
+      <div class="numbertext">3 / 4</div>
+      <img src="IMG3.jpg" style="width:100%">
+    </div>
+    
+    <div class="mySlides">
+      <div class="numbertext">4 / 4</div>
+      <img src="IMG4.jpg" style="width:100%">
+    </div>
+    
+      <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+    <div class="caption-container">
+      <p id="caption"></p>
+    </div>
+
+
+    <div class="column">
+      <img class="demo cursor" src="IMG1.jpg" style="width:100%" onclick="currentSlide(1)">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="IMG2.jpg" style="width:100%" onclick="currentSlide(2)">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="IMG3.jpg" style="width:100%" onclick="currentSlide(3)">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="IMG4.jpg" style="width:100%" onclick="currentSlide(4)">
+    </div>
+    </div>
+    </div>
+
+<script>
+function openModal() {
+  document.getElementById("myModal").style.display = "block";
+}
+
+function closeModal() {
+  document.getElementById("myModal").style.display = "none";
+}
+
+var slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("demo");
+  var captionText = document.getElementById("caption");
+  if (n > slides.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " active";
+  captionText.innerHTML = dots[slideIndex-1].alt;
+}
+
+  
+</script>
+    
+    
+</body>
+</html>
+    

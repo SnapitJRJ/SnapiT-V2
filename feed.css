@@ -1,0 +1,131 @@
+body 
+.footer  {
+   position: fixed;
+   bottom: 0;
+   width: 100%;
+   background-color: white;
+   color: black;
+   text-align: center;
+  
+}
+.flex-container {
+  display: flex;
+  flex-wrap: nowrap;
+justify-content: space-evenly;
+}
+
+.flex-container > p {
+  
+  text-align: center;
+  font-size: 16px;
+}
+  
+.footer img {
+  width: 75px;
+  height: 100%;
+  padding: 10px 10px;
+}
+div {
+  display:inline-block;
+}
+
+.header img {
+  width: 75px;
+  padding: 10px 10px;
+  float: left;
+}
+
+.nav a {
+    float: left;
+    display: block;
+    color: rgb(0, 0, 0);
+    text-align: right;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+.footer a {
+    float: left;
+    display: block;
+    color: rgb(0, 0, 0);
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+.nav a:hover {
+  background-color: rgb(0, 0, 0);
+  color:rgb(173, 140, 186);
+}
+
+.text {
+text-align: center;
+
+  
+}
+
+.card {
+   display: flex;
+  margin: 0 auto;
+  flex-direction: column;
+  padding: 5px;
+   border: 5px solid #ae8dbc;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  transition: 0.3s;
+  width: 30%;
+}
+
+.card:hover {
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+
+.container {
+ margin: auto;
+  width: 50%;
+  padding: 10px;
+
+}
+
+.avatar {
+  vertical-align: middle;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+}
+
+#follow-button {
+  color: #3399FF;
+  font-family: "Helvetica";
+  font-size: 10pt;
+  background-color: #ffffff;
+  border: 1px solid;
+  border-color: #3399FF;
+  border-radius: 3px;
+  width: 85px;
+  height: 30px;
+  cursor: hand;		    
+}
+.lable {
+ text-decoration: none;
+  border: 2px solid #ffffff;
+  background-color: #2196f3;
+  color: #2196f3;
+  padding: 14px 28px;
+  margin: 4px;
+  float: right;
+  font-size: 16px;
+  cursor: pointer;
+  width: 100px;
+  height: 25px;
+  left: 1470px;
+  top: 10px;
+  font-family: 'Montserrat';
+font-style: normal;
+font-weight: 500;
+font-size: 17px;
+line-height: 18px;
+display: flex;
+border-radius: 10px;
+padding: 12px 25px;
+letter-spacing: -0.015em;
+}
+body {
+  background-image: url('SS.png');
